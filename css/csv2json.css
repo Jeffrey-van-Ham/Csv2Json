@@ -31,7 +31,7 @@ input[type="submit"] {
 }
 
 .example {
-    margin-top: 20px;
+    margin: 20px 0;
     display: none;
 }
 
