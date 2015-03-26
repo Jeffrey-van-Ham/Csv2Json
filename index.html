@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Csv 2 Json</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/csv2json.css"/>
+</head>
+<body>
+    <form action="javascript:void(0)">
+        <div class="clearfix">
+            <div class="col-sm-6">
+                <h4>Paste your csv or ...</h4>
+                <textarea class="csv form-control" name="" cols="30" rows="10" placeholder="Plain csv"></textarea>
+            </div>
+            <div class="col-sm-6">
+                <h4>Select your csv file</h4>
+                <input type="file" class="csv-file form-control"/>
+                <p>
+                    This Csv2Json converter expects the csv to be in a specific format. Each Column is split into a new json object except for the first column.
+                    The first column represents the json keys. The first row represents the identifier for the json converted json objects. The first column of
+                    the first row is ignored. <a href="javascript:void(0)" class="example-toggle">Example.</a>
+                </p>
+                <input type="submit" value="Convert" class="btn btn-default"/>
+            </div>
+        </div>
+        <div class="example">
+            <div class="col-sm-4">
+                <h4>Example</h4>
+                <table class="example-table">
+                    <tr>
+                        <td>key</td>
+                        <td>en-US</td>
+                        <td>nl-NL</td>
+                        <td>fr-FR</td>
+                    </tr>
+                    <tr>
+                        <td>hello</td>
+                        <td>Hello</td>
+                        <td>Hallo</td>
+                        <td>Bonjour</td>
+                    </tr>
+                    <tr>
+                        <td>goodbye</td>
+                        <td>Goodbye</td>
+                        <td>Vaarwel</td>
+                        <td>Au revoir</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-4">
+                <h4>Csv</h4>
+                key,en-US,nl-NL,fr-FR<br />
+                hello, Hello, Hallo, Bonjour<br />
+                goodbye, Goodbye, Vaarwel, Au revoir
+            </div>
+            <div class="col-sm-4">
+                <h4>Json</h4>
+                en-US { "hello" : "Hello", "goodbye" : "Goodbye" }<br />
+                nl-NL { "hello" : "Hallo", "goodbye" : "Vaarwel" }<br />
+                fr-FR { "hello" : "Bonjour" , "goodbye" : Au revoir" }
+            </div>
+        </div>
+        <div class="json-response"></div>
+    </form>
+    <script type="application/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="application/javascript" src="js/csv2json.js"></script>
+</body>
+</html>
