@@ -1,7 +1,7 @@
 Csv2Json Converter
 ==================
 
-This Csv2Json converter expects the csv to be in a specific format. Each Column is split into a new json object except for the first column. The first column represents the json keys. The first row represents the identifier for the json converted json objects. The first column of the first row is ignored.
+This Csv2Json converter expects the csv to be in a specific format. Each Column is split into a new json object except for the first column. The first column represents the json keys. The first row represents the identifier for the json converted json objects. The first column of the first row is ignored. This csv2json converter is being used for converting translation csv files into json such as the example below.
 
 ### Example
 
