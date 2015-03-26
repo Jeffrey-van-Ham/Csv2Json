@@ -10,7 +10,7 @@ This Csv2Json converter expects the csv to be in a specific format. Each Column 
 | hello   | Hello   | Hallo   | Bonjour   |
 | goodbye | Goodbye | Vaarwel | Au revoir |
 
-### Csv
+### Csv input
 
 key,en-US,nl-NL,fr-FR
 
@@ -18,7 +18,7 @@ hello, Hello, Hallo, Bonjour
 
 goodbye, Goodbye, Vaarwel, Au revoir
 
-### Json
+### Json output
 
 en-US { "hello" : "Hello", "goodbye" : "Goodbye" }
 
