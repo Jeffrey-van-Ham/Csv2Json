@@ -6,18 +6,21 @@ This Csv2Json converter expects the csv to be in a specific format. Each Column 
 ### Example
 
 | key     | en-US   | nl-NL   | fr-FR     |
-|---------|---------|---------|-----------|
 | hello   | Hello   | Hallo   | Bonjour   |
 | goodbye | Goodbye | Vaarwel | Au revoir |
 
 ### Csv
 
 key,en-US,nl-NL,fr-FR
+
 hello, Hello, Hallo, Bonjour
+
 goodbye, Goodbye, Vaarwel, Au revoir
 
 ### Json
 
 en-US { "hello" : "Hello", "goodbye" : "Goodbye" }
+
 nl-NL { "hello" : "Hallo", "goodbye" : "Vaarwel" }
+
 fr-FR { "hello" : "Bonjour" , "goodbye" : Au revoir" }
